@@ -40,6 +40,7 @@ client.connect(err => {
     ProductsCollection.find({})
     .toArray((err,documents)=>{
       res.send(documents)
+      console.log(err);
     })
   })
 
@@ -52,7 +53,7 @@ client.connect(err => {
 app.listen(port)
 
 
-// ai project a amr ekta error ascilo solve korta partacilam na oita holo monogodb ar error 
+// ai project a amr ekta error ascilo solve korta partacilam na oitaa holo monogodb ar error 
 // ar error ta holo [MongoDriverError: Topology is closed, please connect] aita
 // than ami addProduct a sudu result dici tokhn solve hoica tar aga cilo result ar satha cilo [res.send(result.insertedCount>0)]
 
