@@ -49,7 +49,7 @@ client.connect(err => {
 
 
 
-app.listen(port)
+app.listen(process.env.PORT || port)
 
 
 // ai project a amr ekta error ascilo solve korta partacilam na oitaa holo monogodb ar error 
